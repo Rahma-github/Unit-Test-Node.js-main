@@ -1,0 +1,20 @@
+// it("req to get(/todo/user) ,expect to not get any todos for user who hasn't any todo", async () => {
+//   let newUserWithoutTodos = {
+//     name: "testUser",
+//     email: "testuser@gmail.com",
+//     password: "12345",
+//   };
+
+//   await req.post("/user/signup").send(newUserWithoutTodos);
+//   let loginUser = await req.post("/user/login").send(newUserWithoutTodos);
+//   let newUserToken = loginUser.body.data;
+
+//   let res = await req
+//     .get("/todo/user")
+//     .set({ authorization: newUserToken });
+
+// //   console.log("Response from GET /todo/user for new user:", res.body);
+
+//   expect(res.status).toBe(200);
+//   expect(res.body.message).toContain("Couldn't find any todos for");
+// });
